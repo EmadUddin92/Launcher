@@ -89,7 +89,7 @@
 
 		simplyCountdown('.simply-countdown-one', {
 			year: "2018",
-			month: "05",
+			month: "08",
 			day: "30"
 		});
 
