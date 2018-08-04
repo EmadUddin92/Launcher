@@ -1,6 +1,7 @@
 <?php
 
 
+
 function launcher_setup_theme(){
     load_theme_textdomain("launcher");
     add_theme_support("post-thumbnails");
@@ -44,7 +45,7 @@ function launcher_sidebars(){
         'name'=> __('Footer Right','launcher'),
         'id'=> 'footer-right',
         'description'=> __('footer-right','launcher'),
-        'before_widget'=> '<section id="%1$s" class="widget %2$s">\'',
+        'before_widget'=> '<section id="%1$s" class=" text-right widget %2$s">\'',
         'after_widget'=> '</section>',
         'before_title'=> '<h2 class="widget-title">',
         'after_title'=> '</h2>',
@@ -52,3 +53,8 @@ function launcher_sidebars(){
 }
 
 add_action("widgets_init","launcher_sidebars");
+
+
+function launcher_styles(){
+    
+}
