@@ -26,3 +26,29 @@ function launcher_assets(){
 }
 
 add_action("wp_enqueue_scripts","launcher_assets");
+
+
+
+function launcher_sidebars(){
+    register_sidebar(array(
+        'name'=> __('Footer left','launcher'),
+        'id'=> 'footer-left',
+        'description'=> __('footer-left','launcher'),
+        'before_widget'=> '<section id="%1$s" class="widget %2$s">\'',
+        'after_widget'=> '</section>',
+        'before_title'=> '<h2 class="widget-title">',
+        'after_title'=> '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name'=> __('Footer Right','launcher'),
+        'id'=> 'footer-right',
+        'description'=> __('footer-right','launcher'),
+        'before_widget'=> '<section id="%1$s" class="widget %2$s">\'',
+        'after_widget'=> '</section>',
+        'before_title'=> '<h2 class="widget-title">',
+        'after_title'=> '</h2>',
+    ));
+}
+
+add_action("widgets_init","launcher_sidebars");
