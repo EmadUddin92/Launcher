@@ -25,7 +25,6 @@ get_header();
     <div class="dt js-dt">
         <div class="dtc js-dtc">
             <div class="simply-countdown-one animate-box" data-animate-effect="fadeInUp"></div>
-
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
@@ -47,7 +46,6 @@ get_header();
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
